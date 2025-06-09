@@ -1,8 +1,12 @@
 {
   description = "inventory";
 
-  inputs.std.url = "github:divnix/std/v0.33.3";
-  inputs.std.inputs.devshell.url = "github:numtide/devshell";
+  inputs.devshell.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.devshell.url = "github:numtide/devshell";
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/3e3afe5";
+  inputs.std.inputs.devshell.follows = "devshell";
+  inputs.std.inputs.nixpkgs.follows = "nixpkgs";
+  inputs.std.url = "github:divnix/std";
 
   outputs =
     inputs@{
