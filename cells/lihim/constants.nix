@@ -276,6 +276,7 @@ in
       ip = "0.0.0.0";
     };
   };
+  work = {};
   passwords = {
     catchall = {
       interfaces = {
