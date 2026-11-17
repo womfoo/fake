@@ -23,6 +23,7 @@
         cellBlocks = with blockTypes; [
           (data "constants")
           (functions "lib")
+          (functions "nixosModules")
         ];
       }
       {
