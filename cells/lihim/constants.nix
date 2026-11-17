@@ -371,4 +371,7 @@ in
     };
   };
   tfstate_repo = "REDACTED";
+  d1 = [];
+  tbe = [];
+  d2 = [];
 }
